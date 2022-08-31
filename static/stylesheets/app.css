@@ -106,6 +106,7 @@ h2{
   text-align: center;
 }
 .date{
+	background-color: yellow;
   width: 70%;
   cursor: pointer;
 }
