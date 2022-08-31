@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form {
+	max-width: 16.875rem;
+	font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+	font-weight: normal;
+	line-height: 1.625;
+	margin: 8px auto;
+	z-index: 2;
+}
+.bg{
+  background: rgba(0, 0, 0, 0.7) url("weather.jpg");
+  background-size: cover;
+  background-blend-mode:darken;
+
+}  
+.css-3d-text {
+  font-size: 4.375rem;
+  color: #2407ff;
+  align-self: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 0px 0px 0 rgb(2, 109, 250),
+               1px 1px 0 rgb(245,-3,59),
+               2px 2px 0 rgb(240,-8,54),
+               3px 3px 0 rgb(235,-13,49),
+               4px 4px 0 rgb(230,-18,44),
+               5px 5px 0 rgb(225,-23,39),
+               6px 6px 0 rgb(220,-28,34),
+               7px 7px 0 rgb(215,-33,29),
+               8px 8px 0 rgb(210,-38,24),
+               9px 9px 0 rgb(205,-43,19),
+               10px 10px  0 rgb(200,-48,14),
+               11px 11px 10px rgba(0,0,0,0.6),
+               11px 11px 1px rgba(0,0,0,0.5),
+               0px 0px 10px
+                rgba(0,0,0,.2);
+}
+.slider_output{
+  color: rgb(211, 171, 40);
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 4px rgb(53, 56, 224);
+}
+h2{
+  font-family: Balsamiq Sans, display;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(211, 171, 40);
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 2.6em;
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 4px rgb(53, 56, 224);
+}
+.submit {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 44;
+  -moz-border-radius: 44;
+  border-radius: 2.75rem;
+  font-family: Arial;
+  color: #ffffff;
+  cursor: pointer;
+  font-size:1.625rem;
+  margin-top: 12px;
+  padding: 0.875rem 1.6875rem 0.875rem 1.625rem;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #d934a5);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #d934a5);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #d934a5);
+  background-image: -o-linear-gradient(top, #3cb0fd, #d934a5);
+  background-image: linear-gradient(to bottom, #3cb0fd, #d934a5);
+  text-decoration: none;
+}
+.result{
+  font-size: 0.9375rem;
+}
+.output{
+  height: 5rem;
+  padding: 0 13px 25px 13px;
+  box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 15px;
+  margin: auto;
+  width: 35%;
+  background: #4fada0;
+  border: 2px solid black;
+  text-align: center;
+}
+.date{
+  width: 70%;
+  cursor: pointer;
+}

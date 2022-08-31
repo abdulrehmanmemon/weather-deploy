@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheets/app.css') }}" />
+</head>
+<body class="bg">
+    <center>
+        <div class="heading">
+            <div class="css-3d-text">WEATHER PREDICTION</div>
+            <p style="font-size:48px" class="heart_emoji1">
+                &#9729;
+            </p>
+        </div>
+        <div class="output">
+            {%if result%}
+            <h2>{{result}}</h2>
+            {%endif%}
+        </div>
+        <div class="form">
+    <form action="/predict_Weather" method='post'>
+        <h2>Precipitation</h2>
+        <input type="range" class="range_items" value="26" name="precipitation" min="0" max="55.9" step="0.1"
+            oninput="this.nextElementSibling.value = this.value">
+        <output class="slider_output">26</output>
+        <h2>Maximum Temperature</h2>
+        <input type="range" class="range_items" value="13" name="temp_max" min="-1.6" max="35.6" step="0.1"
+            oninput="this.nextElementSibling.value = this.value">
+        <output class="slider_output">13</output>
+        <h2>Minimum Temperature</h2>
+        <input type="range" class="range_items" value="13" name="temp_min" min="-7.1" max="18.3" step="0.1"
+            oninput="this.nextElementSibling.value = this.value">
+        <output class="slider_output">13</output>
+        <h2>wind-speed</h2>
+        <input type="range" class="range_items" value="3" name="wind" min="0.4" max="9.5" step="0.1"
+        oninput="this.nextElementSibling.value = this.value">
+        <output class="slider_output">3</output>
+        <h2>Date</h2>
+        <input type="date" class="date" name="date" required>
+        <br>
+        <input type="submit" class="submit" value="Predict Weather">
+    </form>
+</div>
+  </center>
+</body>
+</html>
